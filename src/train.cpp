@@ -42,10 +42,8 @@ int Train::getLength()
         length = distance;
 
         for (; distance > 0; distance--) {
-            std::cout << distance << std::endl;
             countOp++;
             first = first->prev;
-            std::cout << "end" << std::endl;
         }
         if (first->light == false) {
             flag = false;
